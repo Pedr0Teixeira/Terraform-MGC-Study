@@ -1,5 +1,5 @@
 // virtual_machines.tf
-resource "mgc_virtual-machine_instances" "VM_Ubuntu" {
+resource "mgc_virtual_machine_instances" "VM_Ubuntu" {
     provider = mgc.sudeste
     name = "VM-Ubuntu-Terraform-Pedro"
     machine_type = {
@@ -13,9 +13,9 @@ resource "mgc_virtual-machine_instances" "VM_Ubuntu" {
     network = {
         associate_public_ip = true # If true, will create a public IP
         delete_public_ip    = true
-        interface = {
-            security_groups = [{ "id" : module.security-group.id}]
-        }
+        # interface = {
+        #     security_groups = [{ "id" : module.security-group.id}]
+        # }
     }
 
     ssh_key_name = "managed-services"
