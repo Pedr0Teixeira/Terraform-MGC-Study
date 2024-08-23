@@ -1,5 +1,5 @@
 // virtual_machines.tf
-resource "mgc_virtual_machine_instances" "VM_Ubuntu" {
+resource "mgc_virtual_machine_instances" "vm_ubuntu" {
     provider = mgc.sudeste
     name = "VM-Ubuntu-Terraform-Pedro"
     machine_type = {
