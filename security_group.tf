@@ -1,1 +1,0 @@
-# Em desenvolvimento da Thread
